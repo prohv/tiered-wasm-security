@@ -1,0 +1,150 @@
+{
+    "metrics": {
+        "data_received": {
+            "count": 3856068,
+            "rate": 963171.4924266028
+        },
+        "http_req_failed": {
+            "passes": 9116,
+            "fails": 0,
+            "value": 1
+        },
+        "iteration_duration": {
+            "max": 25.026986,
+            "p(50)": 4.11885,
+            "p(90)": 6.5257915,
+            "p(95)": 7.48905025,
+            "p(99)": 12.417185050000008,
+            "avg": 4.373752124506359,
+            "min": 1.080507,
+            "med": 4.11885
+        },
+        "vus": {
+            "min": 10,
+            "max": 10,
+            "value": 10
+        },
+        "http_req_waiting": {
+            "p(90)": 5.7705874999999995,
+            "p(95)": 6.671891,
+            "p(99)": 11.4395988,
+            "avg": 3.6497435275340058,
+            "min": 0.095492,
+            "med": 3.4189665,
+            "max": 24.257263,
+            "p(50)": 3.4189665
+        },
+        "http_req_blocked": {
+            "max": 4.570393,
+            "p(50)": 0.25148349999999997,
+            "p(90)": 0.423634,
+            "p(95)": 0.61419475,
+            "p(99)": 1.127314500000002,
+            "avg": 0.2973671243966666,
+            "min": 0.089907,
+            "med": 0.25148349999999997
+        },
+        "http_req_receiving": {
+            "p(50)": 0.094106,
+            "p(90)": 0.149723,
+            "p(95)": 0.19743575,
+            "p(99)": 0.5901065000000008,
+            "avg": 0.1129566918604651,
+            "min": 0.030586,
+            "med": 0.094106,
+            "max": 2.614946
+        },
+        "data_sent": {
+            "count": 150769524,
+            "rate": 37659322.25353093
+        },
+        "http_reqs": {
+            "count": 9116,
+            "rate": 2277.0011641290844
+        },
+        "truncation_blocked": {
+            "count": 9116,
+            "rate": 2277.0011641290844
+        },
+        "http_req_duration": {
+            "p(99)": 11.705363850000015,
+            "avg": 3.8975852837867504,
+            "min": 0.753488,
+            "med": 3.6592029999999998,
+            "max": 24.601328,
+            "p(50)": 3.6592029999999998,
+            "p(90)": 6.023687,
+            "p(95)": 6.9431075
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(50)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "p(99)": 0
+        },
+        "http_req_sending": {
+            "avg": 0.13488506439227757,
+            "min": 0.04132,
+            "med": 0.111831,
+            "max": 4.696561,
+            "p(50)": 0.111831,
+            "p(90)": 0.17848399999999998,
+            "p(95)": 0.24018275,
+            "p(99)": 0.5630702500000007
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "iterations": {
+            "count": 9116,
+            "rate": 2277.0011641290844
+        },
+        "checks": {
+            "passes": 18232,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_connecting": {
+            "avg": 0.22251350680122822,
+            "min": 0.065148,
+            "med": 0.18727850000000001,
+            "max": 4.515171,
+            "p(50)": 0.18727850000000001,
+            "p(90)": 0.3157065,
+            "p(95)": 0.4454385,
+            "p(99)": 0.8627849000000013
+        },
+        "padded_attacks_sent": {
+            "count": 9116,
+            "rate": 2277.0011641290844
+        }
+    },
+    "root_group": {
+        "checks": {
+            "truncation safety policy enforced (403)": {
+                "fails": 0,
+                "name": "truncation safety policy enforced (403)",
+                "path": "::truncation safety policy enforced (403)",
+                "id": "4d11036fc7fbb66505b0a92eb32925f5",
+                "passes": 9116
+            },
+            "inspection status is partially inspected": {
+                "path": "::inspection status is partially inspected",
+                "id": "ae9c83c6c4e9093499d82ee93f5c1e37",
+                "passes": 9116,
+                "fails": 0,
+                "name": "inspection status is partially inspected"
+            }
+        },
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {}
+    }
+}

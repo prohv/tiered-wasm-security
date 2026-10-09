@@ -1,0 +1,150 @@
+{
+    "metrics": {
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(50)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "p(99)": 0,
+            "avg": 0
+        },
+        "http_req_connecting": {
+            "med": 0.196631,
+            "max": 12.48657,
+            "p(50)": 0.196631,
+            "p(90)": 0.340037,
+            "p(95)": 0.493883,
+            "p(99)": 0.943979599999997,
+            "avg": 0.24644943730955826,
+            "min": 0.05184
+        },
+        "data_received": {
+            "count": 3748203,
+            "rate": 936074.0741808885
+        },
+        "padded_attacks_sent": {
+            "count": 8861,
+            "rate": 2212.9410737136845
+        },
+        "vus_max": {
+            "max": 10,
+            "value": 10,
+            "min": 10
+        },
+        "http_req_duration": {
+            "avg": 3.9480453112515277,
+            "min": 0.859831,
+            "med": 3.612443,
+            "max": 29.140936,
+            "p(50)": 3.612443,
+            "p(90)": 6.01847,
+            "p(95)": 7.134322,
+            "p(99)": 12.219890199999995
+        },
+        "iteration_duration": {
+            "p(90)": 6.661785,
+            "p(95)": 7.835643,
+            "p(99)": 13.190823999999973,
+            "avg": 4.500454469360113,
+            "min": 1.190748,
+            "med": 4.159844,
+            "max": 29.663054,
+            "p(50)": 4.159844
+        },
+        "http_req_blocked": {
+            "p(95)": 0.692415,
+            "p(99)": 1.3183013999999977,
+            "avg": 0.3325909098295906,
+            "min": 0.073557,
+            "med": 0.26401,
+            "max": 12.548211,
+            "p(50)": 0.26401,
+            "p(90)": 0.474598
+        },
+        "iterations": {
+            "count": 8861,
+            "rate": 2212.9410737136845
+        },
+        "http_req_sending": {
+            "p(90)": 0.24703,
+            "p(95)": 0.36745,
+            "p(99)": 0.8552169999999994,
+            "avg": 0.18745767091750398,
+            "min": 0.064366,
+            "med": 0.147756,
+            "max": 10.610859,
+            "p(50)": 0.147756
+        },
+        "http_req_waiting": {
+            "p(90)": 5.715062,
+            "p(95)": 6.820489,
+            "p(99)": 11.7692856,
+            "avg": 3.6338836111048334,
+            "min": 0.20367,
+            "med": 3.307661,
+            "max": 28.912313,
+            "p(50)": 3.307661
+        },
+        "vus": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_req_failed": {
+            "passes": 8861,
+            "fails": 0,
+            "value": 1
+        },
+        "data_sent": {
+            "count": 291730703,
+            "rate": 72856658.96987563
+        },
+        "checks": {
+            "passes": 17722,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_receiving": {
+            "med": 0.098525,
+            "max": 11.06478,
+            "p(50)": 0.098525,
+            "p(90)": 0.168102,
+            "p(95)": 0.240681,
+            "p(99)": 0.7181223999999992,
+            "avg": 0.1267040292292062,
+            "min": 0.028248
+        },
+        "truncation_blocked": {
+            "count": 8861,
+            "rate": 2212.9410737136845
+        },
+        "http_reqs": {
+            "count": 8861,
+            "rate": 2212.9410737136845
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "truncation safety policy enforced (403)": {
+                    "passes": 8861,
+                    "fails": 0,
+                    "name": "truncation safety policy enforced (403)",
+                    "path": "::truncation safety policy enforced (403)",
+                    "id": "4d11036fc7fbb66505b0a92eb32925f5"
+                },
+                "inspection status is partially inspected": {
+                    "name": "inspection status is partially inspected",
+                    "path": "::inspection status is partially inspected",
+                    "id": "ae9c83c6c4e9093499d82ee93f5c1e37",
+                    "passes": 8861,
+                    "fails": 0
+                }
+            },
+        "name": "",
+        "path": ""
+    }
+}

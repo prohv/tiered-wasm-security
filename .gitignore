@@ -1,0 +1,21 @@
+# Rust build artifacts (ignore intermediate files, but keep the compiled .wasm)
+filter/target/*
+!filter/target/wasm32-wasip1/
+filter/target/wasm32-wasip1/*
+!filter/target/wasm32-wasip1/release/
+filter/target/wasm32-wasip1/release/*
+!filter/target/wasm32-wasip1/release/wasm_tiered_security.wasm
+
+# Go compiled binaries
+backend/*.exe
+backend/*_linux
+backend/backend
+
+# Python cache & logs
+__pycache__/
+*.pyc
+results/execution.log
+results/EXPERIMENT_EXECUTION_LOCK.log
+
+# Scratch testing files
+scratch/

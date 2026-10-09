@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: waf_backend
+    ports:
+      - "8081:8081"
+    networks:
+      - waf_net
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8081/health || exit 1"]
+      interval: 2s
+      timeout: 2s
+      retries: 5
+
+  envoy:
+    image: envoyproxy/envoy:v1.31.0
+    container_name: waf_envoy
+    ports:
+      - "10000:10000"
+      - "9901:9901"
+    volumes:
+      - ./envoy/active_envoy.yaml:/etc/envoy/envoy.yaml:ro
+      - ./filter/target/wasm32-wasip1/release/wasm_tiered_security.wasm:/etc/envoy/wasm/wasm_tiered_security.wasm:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+    command: ["envoy", "-c", "/etc/envoy/envoy.yaml", "--log-level", "info", "--concurrency", "2"]
+    networks:
+      - waf_net
+
+networks:
+  waf_net:
+    driver: bridge
