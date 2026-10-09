@@ -83,7 +83,7 @@ The proposed system (`mode: proposed`) introduces conditional payload acquisitio
 - Payloads are only transferred into WebAssembly memory when justified by metadata risk escalation.
 - Inspection is strictly bounded by a configurable byte limit (`MAX_INSPECTION_BYTES = 4096`).
 - Buffer Acquisition Ratio (BAR) is explicitly tracked:
-  $$\text{BAR} = \frac{\text{PAYLOAD\_ACQUISITION\_COUNT}}{\text{TOTAL\_REQUESTS}}$$
+  $$\text{BAR} = \frac{N_{\text{acq}}}{N_{\text{total}}} = \frac{\text{Payload Acquisition Count}}{\text{Total Requests}}$$
 
 ---
 

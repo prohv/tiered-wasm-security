@@ -86,7 +86,8 @@ project/
 ## 3. Metrics Definitions
 
 - **BAR (Buffer Acquisition Ratio)**:
-  $$\text{BAR} = \frac{\text{PAYLOAD\_ACQUISITION\_COUNT}}{\text{TOTAL\_REQUESTS}}$$
+  $$\text{BAR} = \frac{N_{\text{acq}}}{N_{\text{total}}} = \frac{\text{Payload Acquisition Count}}{\text{Total Requests}}$$
+
   Measures the fraction of requests that incurred a host-to-guest body acquisition.
 - **Payload Acquisition Rate**: Rate of payload acquisition events per total requests.
 - **Payload Bytes Per Request**: Total bytes copied across the WebAssembly boundary divided by total requests.
